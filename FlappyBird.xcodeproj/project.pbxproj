@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD3FDEB5272ED9C1005D095F /* oto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD3FDEB4272ED9C1005D095F /* oto.mp3 */; };
+		BD47FA212730194D00DE5B60 /* BGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD47FA202730194D00DE5B60 /* BGM.mp3 */; };
 		BD6DE831272ACBD000D538B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DE830272ACBD000D538B3 /* AppDelegate.swift */; };
 		BD6DE833272ACBD000D538B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DE832272ACBD000D538B3 /* SceneDelegate.swift */; };
 		BD6DE835272ACBD000D538B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DE834272ACBD000D538B3 /* ViewController.swift */; };
 		BD6DE838272ACBD000D538B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6DE836272ACBD000D538B3 /* Main.storyboard */; };
 		BD6DE83A272ACBD000D538B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6DE839272ACBD000D538B3 /* Assets.xcassets */; };
 		BD6DE83D272ACBD000D538B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6DE83B272ACBD000D538B3 /* LaunchScreen.storyboard */; };
+		BD6DE847272ADB5000D538B3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DE846272ADB5000D538B3 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD3FDEB4272ED9C1005D095F /* oto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oto.mp3; sourceTree = "<group>"; };
+		BD47FA202730194D00DE5B60 /* BGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = BGM.mp3; path = ../../../../../../Downloads/BGM.mp3; sourceTree = "<group>"; };
 		BD6DE82D272ACBD000D538B3 /* FlappyBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappyBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6DE830272ACBD000D538B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD6DE832272ACBD000D538B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		BD6DE839272ACBD000D538B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD6DE83C272ACBD000D538B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD6DE83E272ACBD000D538B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD6DE846272ADB5000D538B3 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				BD6DE830272ACBD000D538B3 /* AppDelegate.swift */,
 				BD6DE832272ACBD000D538B3 /* SceneDelegate.swift */,
 				BD6DE834272ACBD000D538B3 /* ViewController.swift */,
+				BD6DE846272ADB5000D538B3 /* GameScene.swift */,
+				BD3FDEB4272ED9C1005D095F /* oto.mp3 */,
+				BD47FA202730194D00DE5B60 /* BGM.mp3 */,
 				BD6DE836272ACBD000D538B3 /* Main.storyboard */,
 				BD6DE839272ACBD000D538B3 /* Assets.xcassets */,
 				BD6DE83B272ACBD000D538B3 /* LaunchScreen.storyboard */,
@@ -127,6 +136,8 @@
 				BD6DE83D272ACBD000D538B3 /* LaunchScreen.storyboard in Resources */,
 				BD6DE83A272ACBD000D538B3 /* Assets.xcassets in Resources */,
 				BD6DE838272ACBD000D538B3 /* Main.storyboard in Resources */,
+				BD47FA212730194D00DE5B60 /* BGM.mp3 in Resources */,
+				BD3FDEB5272ED9C1005D095F /* oto.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +150,7 @@
 			files = (
 				BD6DE835272ACBD000D538B3 /* ViewController.swift in Sources */,
 				BD6DE831272ACBD000D538B3 /* AppDelegate.swift in Sources */,
+				BD6DE847272ADB5000D538B3 /* GameScene.swift in Sources */,
 				BD6DE833272ACBD000D538B3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.GitMi.Hub.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +327,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.GitMi.Hub.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
