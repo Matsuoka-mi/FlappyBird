@@ -532,7 +532,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             //integer(forKey:)メソッドでキーを指定する。ここではBESTをキーにする
             var itembestScore = userDefaults.integer(forKey: "itemBEST")
             if itemscore > itembestScore {
-                itembestScore = score
+                itembestScore = itemscore
                 itembestScoreLabelNode.text = "itemBest Score:\(itembestScore)"
                 userDefaults.set(itembestScore, forKey: "itemBEST")
                 userDefaults.synchronize()  //synchronize(即座に反映させるためのメソッド）
